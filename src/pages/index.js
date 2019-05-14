@@ -1,6 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
 import { FaLinkedin } from 'react-icons/fa'
+import "../components/layout.css"
 
 const LINKEDIN_URL = 'https://www.linkedin.com/in/christopher-hogg-081a41128/'
 
