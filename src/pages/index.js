@@ -1,21 +1,19 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import { FaLinkedin } from 'react-icons/fa'
+
+const LINKEDIN_URL = 'https://www.linkedin.com/in/christopher-hogg-081a41128/'
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+  <div className='wrapper'>
+    <SEO title="Home" keywords={[`web developer`]} />
+    <div className='two'>
+      <h1>I am Chris Hogg.</h1>
+      <h1>Web Developer.</h1>
+      <a href="mailto:chrishogg@protonmail.com">chrishogg@protonmail.com</a>
+      <p> <a href={LINKEDIN_URL}> <FaLinkedin></FaLinkedin> </a> </p>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  </div >
 )
 
 export default IndexPage
