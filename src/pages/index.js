@@ -13,6 +13,16 @@ const IndexPage = () => (
       <h1>I am Chris Hogg.</h1>
       <h1>Web Developer.</h1>
       <p> <a href={`mailto:${EMAIL_ADDRESS}`}> <IoMdMail></IoMdMail> </a>   <a href={LINKEDIN_URL}> <IoLogoLinkedin></IoLogoLinkedin> </a> </p>
+      <br />
+      <br />
+      <h2> Things I've Worked On</h2>
+      <ul>
+        <li> Logistic management system (blik) </li>
+        <li> Survery Application (TNG Technology Consulting)</li>
+        <li> SEO Optimised Website. (Buckland Nurseries) </li>
+        <li> Wordpress Website (FEG-MM) </li>
+        <li> Game of Flags (silly game which first got me into web development)</li>
+      </ul>
     </div>
   </div >
 )
