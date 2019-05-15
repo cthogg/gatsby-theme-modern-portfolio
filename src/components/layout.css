@@ -6,12 +6,12 @@ body { font-family: 'Overlock', cursive;
 h1{
   font-size: 48px
 }
-p,a {
-  font-size: 24px
-}
 a{
-  color: black;
-  text-decoration: none
+  color: black
+}
+
+a:hover{
+  text-decoration: underline;
 }
 ul{
   padding-left: 20px
