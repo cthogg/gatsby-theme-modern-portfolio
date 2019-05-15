@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Overlock');
 body { font-family: 'Overlock', cursive;
   background-color: #E5F1F6;
+  word-wrap: break-word;
 }
 
 h1{
-  font-size: 48px
+  font-size: 2.4em
 }
 a{
   color: black
@@ -18,8 +19,7 @@ ul{
 }
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, [col-start] 1fr);
 }
 
 .two > p {
@@ -30,13 +30,11 @@ ul{
   margin: 2px
 }
 .two { 
-  grid-column: col-start 4 / span 4;
-  grid-row: 20;
+  grid-column: col-start 3 / span 6;
 }
 
 @media screen and (max-width: 500px) {
   .two { 
-    grid-column: col-start 1 / span 4;
-    grid-row: 2;
+    grid-column: col-start 1 / span 12;
   }
 }
