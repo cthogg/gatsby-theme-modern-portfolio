@@ -1,5 +1,6 @@
 import React from "react"
 import SEO from "../components/seo"
+import TestComp from '../components/TestComp'
 import { IoLogoLinkedin, IoMdMail } from 'react-icons/io'
 import { graphql } from "gatsby"
 
@@ -22,6 +23,7 @@ const IndexPage = ({ data }) => {
     <div className='wrapper'>
       <SEO title="Home" keywords={[`web developer`]} />
       <div className='two'>
+      <TestComp> </TestComp>
         <h1>I am Chris Hogg.</h1>
         <h1>Web Developer.</h1>
         <p><a style={{ textDecoration: 'none' }} href={`mailto:${EMAIL_ADDRESS}`}><IoMdMail style={logoStyle}></IoMdMail> </a>   <a href={LINKEDIN_URL}> <IoLogoLinkedin style={logoStyle}></IoLogoLinkedin> </a> </p>
