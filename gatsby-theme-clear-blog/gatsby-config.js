@@ -1,17 +1,23 @@
+const path = require("path");
+
 module.exports = {
   siteMetadata: {
     title: `Chris Hogg`,
     description: `Personal Website for Chris Hogg`,
-    author: `@gatsbyjs`,
+    author: `@gatsbyjs`
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: { path: path.join(__dirname, "src/pages") }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -21,9 +27,9 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        display: `minimal-ui`,
+        display: `minimal-ui`
         // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
@@ -32,8 +38,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages/markdown`,
-        name: "markdown-pages",
-      },
+        name: "markdown-pages"
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -48,6 +54,6 @@ module.exports = {
           }
         ]
       }
-    },
-  ],
-}
+    }
+  ]
+};
