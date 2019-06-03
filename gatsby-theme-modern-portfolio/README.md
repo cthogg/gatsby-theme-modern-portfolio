@@ -24,7 +24,6 @@ module.exports = {
 1. Copy and paste the code snippet below into the markdown file
 
 ```markdown
-
 ---
 title: "I am Chris Hogg"
 subtitle: "Web Developer"
@@ -32,10 +31,12 @@ email: "chrishogg@protonmail.com"
 linkedin: "https://www.linkedin.com/in/christopher-hogg-081a41128/"
 ---
 
-## Things I've Worked On
+## Experience
 - Logistic management application with [blik](http://www.blik.io)
 
 ```
+1. Add `.cache` and `public` to the repo's `.gitignore` file
+
 ## Features
 - Write a simple portfolio site from just one markdown file
 - ability to change the styles (colors and typography)
@@ -44,11 +45,11 @@ linkedin: "https://www.linkedin.com/in/christopher-hogg-081a41128/"
 - Ability to blog - hopefully this can be *composed* with another theme later.
 
 ## TODO:
-- add a favicon
+- ability to add a favicon
 - allow the user to set the font and color theme (see how [mdx-blog](https://github.com/jxnblk/gatsby-theme-mdx-blog/tree/master/example) has done this)
 - integrate with netlify-cms
 
 ## With thanks to:
 -  [These](https://github.com/sw-yx/gatsby-theme-dev-blog/tree/master/src) [two](https://github.com/jxnblk/gatsby-theme-mdx-blog/tree/master/example)   great working examples of themes.
--  The Gatsby team to great documentation.
+-  The Gatsby team to great documentation, and their default starter from which this project was initially based off.
 -  For this (WHERE) website for the style inspiration.

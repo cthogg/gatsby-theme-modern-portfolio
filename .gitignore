@@ -1,3 +1,3 @@
 node_modules
-example/.cache
+.cache
 yarn-error.log
