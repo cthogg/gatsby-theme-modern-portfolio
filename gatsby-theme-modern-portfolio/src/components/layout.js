@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import "./layout.css"
-
+import {GlobalStyle} from '../pages/index'
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -23,6 +23,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+  <GlobalStyle whiteColor />
         <div
           style={{
             margin: `0 auto`,
