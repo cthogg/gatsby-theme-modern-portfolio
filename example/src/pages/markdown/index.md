@@ -3,6 +3,8 @@ title: "I am Chris Hogg"
 subtitle: "Web Developer"
 email: "chrishogg@protonmail.com"
 linkedin: "https://www.linkedin.com/in/christopher-hogg-081a41128/"
+textColor: 'black'
+backgroundColor: '#e5f1f6'
 ---
 
 ## Things I've Worked On

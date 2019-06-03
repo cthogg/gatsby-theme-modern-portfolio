@@ -2,51 +2,7 @@ import React from "react";
 import SEO from "../components/seo";
 import { IoLogoLinkedin, IoMdMail } from "react-icons/io";
 import { graphql } from "gatsby";
-
-import { createGlobalStyle } from 'styled-components'
-
-export const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css?family=Overlock');
-body { font-family: 'Overlock', cursive;
-  background-color: #E5F1F6;
-  word-wrap: break-word;
-}
-
-h1{
-  font-size: 2.4em
-}
-a{
-  color: black
-}
-
-a:hover{
-  text-decoration: underline;
-}
-ul{
-  padding-left: 20px
-}
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, [col-start] 1fr);
-}
-
-.two > p {
-  margin: 2px
-}
-
-.two > h1 {
-  margin: 2px
-}
-.two { 
-  grid-column: col-start 3 / span 6;
-}
-
-@media screen and (max-width: 500px) {
-  .two { 
-    grid-column: col-start 1 / span 12;
-  }
-}
-`
+import Layout from "../components/layout";
 
 const logoStyle = {
   width: "27px",
@@ -59,7 +15,7 @@ const IndexPage = ({ data }) => {
   return (
 
 <React.Fragment>
-  <GlobalStyle whiteColor />
+  <Layout> 
     <div className="wrapper">
       <SEO title="Home" keywords={[`web developer`]} />
       <div className="two">
@@ -85,6 +41,7 @@ const IndexPage = ({ data }) => {
         />
       </div>
     </div>
+    </Layout>
     </React.Fragment>
   );
 };

@@ -5,47 +5,86 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import "./layout.css"
-import {GlobalStyle} from '../pages/index'
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
+      query {
+        markdownRemark {
+          id
+          frontmatter {
+            textColor
+            backgroundColor
           }
         }
       }
     `}
-    render={data => (
-      <>
-  <GlobalStyle whiteColor />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
-        </div>
-      </>
-    )}
-  />
-)
+    render={data => {
+      const {textColor, backgroundColor} = data.markdownRemark.frontmatter
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+      const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css?family=Overlock');
+body { font-family: 'Overlock', cursive;
+  background-color: ${props => props.theme.backgroundColor};
+  word-wrap: break-word;
+  color: ${props => props.theme.textColor};
 }
 
-export default Layout
+h1{
+  font-size: 2.4em
+}
+a{
+  color: ${props => props.theme.textColor}
+}
+
+a:hover{
+  text-decoration: underline;
+}
+ul{
+  padding-left: 20px
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, [col-start] 1fr);
+}
+
+.two > p {
+  margin: 2px
+}
+
+.two > h1 {
+  margin: 2px
+}
+.two { 
+  grid-column: col-start 3 / span 6;
+}
+
+@media screen and (max-width: 500px) {
+  .two { 
+    grid-column: col-start 1 / span 12;
+  }
+}
+`;
+      return (
+        <ThemeProvider
+          theme={{ backgroundColor: backgroundColor, textColor: textColor }}
+        >
+          <>
+            <GlobalStyle />
+            <main>{children}</main>
+          </>
+        </ThemeProvider>
+      );
+    }}
+  />
+);
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired
+};
+
+export default Layout;
