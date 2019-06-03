@@ -10,10 +10,14 @@ That's correct. Create your portfolio from just one markdown file.
 - (coming soon): Deploy to netlify to see it live!
 - (coming soon): ability to change the site's ui with themes.
 
+
+## Out of Scope
+- Ability to blog - hopefully this can be *composed* with another theme later.
+
 ## Installation
 
 1. On a new repo install gatsby and this theme `yarn add gatsby gatsby-theme-modern-portfolio -D`
-1. Create a`gatsby-config.js` file
+1. Create a`gatsby-config.js` file in the root
 1. Set the `gatsby-theme-modern-portfolio` in the `__experimentalThemes` option inside your `gatsby-config.js` 
 
 ```js
@@ -32,14 +36,14 @@ module.exports = {
 
 ```markdown
 ---
-title: "I am Chris Hogg"
-subtitle: "Web Developer"
-email: "chrishogg@protonmail.com"
-linkedin: "https://www.linkedin.com/in/christopher-hogg-081a41128/"
+title: "John Doe"
+subtitle: "My Website"
+email: "john@doe.com"
+linkedin: "https://www.linkedin.com/in/john_doe"
 ---
 
 ## Experience
-- Logistic management application with [blik](http://www.blik.io)
+- Building websites
 
 ```
 1. Add `.cache` and `public` to the repo's `.gitignore` file
@@ -48,8 +52,6 @@ linkedin: "https://www.linkedin.com/in/christopher-hogg-081a41128/"
 
 1. (coming soon): Deploy to netlify to see it live!
 
-## Out of Scope
-- Ability to blog - hopefully this can be *composed* with another theme later.
 
 ## TODO:
 - Easily deploy to netlify.

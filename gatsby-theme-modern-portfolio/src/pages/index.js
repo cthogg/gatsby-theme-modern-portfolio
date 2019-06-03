@@ -2,7 +2,7 @@ import React from "react";
 import SEO from "../components/seo";
 import { IoLogoLinkedin, IoMdMail } from "react-icons/io";
 import { graphql } from "gatsby";
-
+import  Image  from "../components/image";
 import "../components/layout.css";
 
 const logoStyle = {
