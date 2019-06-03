@@ -2,7 +2,7 @@
 - this is my personal website made using gatbsy themes
 
 ## Editing
-- edit the styles etc in `gatsby-theme-clear-blog`
+- edit the styles etc in `gatsby-theme-modern-portfolio`
 - the project uses yarn workspaces so to execute a command from root use e.g. `yarn workspace example develop`
 
 ## TODO:
