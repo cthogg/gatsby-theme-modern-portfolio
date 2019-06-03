@@ -6,5 +6,7 @@
 - the project uses yarn workspaces so to execute a command from root use e.g. `yarn workspace example develop`
 
 ## TODO:
-- ensure that my personal site is shown on example and not in the gatsby theme-clear-blog
+- make the linkedin and email address in the markdown file
+- change the colours easily with an option
+- 
 - connect to Netlify CMS easily.

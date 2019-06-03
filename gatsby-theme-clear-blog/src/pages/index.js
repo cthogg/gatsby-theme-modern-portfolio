@@ -1,30 +1,36 @@
-import React from "react"
-import SEO from "../components/seo"
-import { IoLogoLinkedin, IoMdMail } from 'react-icons/io'
-import { graphql } from "gatsby"
+import React from "react";
+import SEO from "../components/seo";
+import { IoLogoLinkedin, IoMdMail } from "react-icons/io";
+import { graphql } from "gatsby";
 
-
-import "../components/layout.css"
-
+import "../components/layout.css";
 
 const logoStyle = {
-  width: '27px',
-  height: '27px'
-
-}
-const LINKEDIN_URL = 'https://www.linkedin.com/in/christopher-hogg-081a41128/'
-const EMAIL_ADDRESS = 'chrishogg@protonmail.com'
+  width: "27px",
+  height: "27px"
+};
 const IndexPage = ({ data }) => {
-  const { markdownRemark } = data
-  const { html } = markdownRemark
-
+  const { markdownRemark } = data;
+  const { html, frontmatter } = markdownRemark;
+  const {title,subtitle, email, linkedin} = frontmatter
   return (
-    <div className='wrapper'>
+    <div className="wrapper">
       <SEO title="Home" keywords={[`web developer`]} />
-      <div className='two'>
-        <h1>I am Chris Hogg.</h1>
-        <h1>Web Developer.</h1>
-        <p><a style={{ textDecoration: 'none' }} href={`mailto:${EMAIL_ADDRESS}`}><IoMdMail style={logoStyle}></IoMdMail> </a>   <a href={LINKEDIN_URL}> <IoLogoLinkedin style={logoStyle}></IoLogoLinkedin> </a> </p>
+      <div className="two">
+        <h1>{title}</h1>
+        <h1>{subtitle}</h1>
+        <p>
+          <a
+            style={{ textDecoration: "none" }}
+            href={`mailto:${email}`}
+          >
+            <IoMdMail style={logoStyle} />{" "}
+          </a>{" "}
+          <a href={linkedin}>
+            {" "}
+            <IoLogoLinkedin style={logoStyle} />{" "}
+          </a>{" "}
+        </p>
         <br />
         <br />
         <div
@@ -32,21 +38,23 @@ const IndexPage = ({ data }) => {
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
-    </div >
-  )
-}
+    </div>
+  );
+};
 
-export default IndexPage
-
+export default IndexPage;
 
 export const pageQuery = graphql`
-  query{
+  query {
     markdownRemark {
       id
       html
-      frontmatter{title,path,date
-      
+      frontmatter {
+        title
+        subtitle
+        email
+        linkedin
       }
     }
   }
-`
+`;

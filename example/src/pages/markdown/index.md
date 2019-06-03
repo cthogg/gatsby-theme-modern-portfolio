@@ -1,7 +1,10 @@
 ---
 path: "/blog/my-first-post"
 date: "2017-11-07"
-title: "My first blog YAAYY"
+title: "I am Chris Hogg"
+subtitle: "Web Developer"
+email: "chrishogg@protonmail.com"
+linkedin: "https://www.linkedin.com/in/christopher-hogg-081a41128/"
 ---
 
 ## Things I've Worked On
