@@ -3,7 +3,8 @@ const path = require("path");
 module.exports =  (opts = {siteTitle, siteDescription}) => {
   const {
     path: posts = `src/pages/markdown`,
-    siteTitle, siteDescription,
+    siteTitle="stub title", 
+    siteDescription='stub description'
   } = opts 
 
   return {
