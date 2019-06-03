@@ -1,6 +1,4 @@
 ---
-path: "/blog/my-first-post"
-date: "2017-11-07"
 title: "I am Chris Hogg"
 subtitle: "Web Developer"
 email: "chrishogg@protonmail.com"
