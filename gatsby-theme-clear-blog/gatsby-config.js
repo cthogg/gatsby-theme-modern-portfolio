@@ -1,5 +1,9 @@
 const path = require("path");
 
+const
+  posts = `src/pages/markdown`
+  console.log(posts)
+
 module.exports = {
   siteMetadata: {
     title: `Chris Hogg`,
@@ -37,7 +41,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages/markdown`,
+        path: path.resolve(posts),
         name: "markdown-pages"
       }
     },
