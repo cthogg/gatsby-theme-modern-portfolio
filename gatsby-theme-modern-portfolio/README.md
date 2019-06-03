@@ -21,7 +21,7 @@ module.exports = {
 }
 ```
 1. Create directory `src/pages/markdown` `mkdir -p src/pages/markdown`
-1. Copy and paste the code snippet below into the markdown file
+1. Create `index.md` in `src/pages/markdown` and add the following to it
 
 ```markdown
 ---
@@ -37,6 +37,10 @@ linkedin: "https://www.linkedin.com/in/christopher-hogg-081a41128/"
 ```
 1. Add `.cache` and `public` to the repo's `.gitignore` file
 
+1. Run with `yarn gatsby develop`  
+
+1. (coming soon): Deploy to netlify to see it live!
+
 ## Features
 - Write a simple portfolio site from just one markdown file
 - ability to change the styles (colors and typography)
@@ -45,6 +49,7 @@ linkedin: "https://www.linkedin.com/in/christopher-hogg-081a41128/"
 - Ability to blog - hopefully this can be *composed* with another theme later.
 
 ## TODO:
+- Easily deploy to netlify.
 - ability to add a favicon
 - allow the user to set the font and color theme (see how [mdx-blog](https://github.com/jxnblk/gatsby-theme-mdx-blog/tree/master/example) has done this)
 - integrate with netlify-cms
