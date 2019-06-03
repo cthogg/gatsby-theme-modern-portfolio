@@ -2,7 +2,7 @@
   "name": "gatsby-theme-modern-portfolio",
   "keywords": [],
   "author": "Chris Hogg <chrishogg@protonmail.com>",
-  "version": "0.5",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "Gatbsy theme to create a simple portfolio site",
   "main": "gatsby-config.js",
