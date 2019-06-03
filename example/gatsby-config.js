@@ -1,3 +1,8 @@
 module.exports = {
-  __experimentalThemes: ["gatsby-theme-clear-blog"],
+  __experimentalThemes: [    {
+    resolve: "gatsby-theme-clear-blog" ,
+    options: {
+      // : '',
+    }
+  },]
 }
