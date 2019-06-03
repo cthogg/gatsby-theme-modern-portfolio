@@ -1,8 +1,13 @@
 {
   "name": "gatsby-theme-modern-portfolio",
-  "keywords": [],
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "blog",
+    "portfolio"
+],
   "author": "Chris Hogg <chrishogg@protonmail.com>",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "description": "Gatbsy theme to create a simple portfolio site",
   "main": "gatsby-config.js",
@@ -35,9 +40,6 @@
   "devDependencies": {
     "prettier": "^1.17.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

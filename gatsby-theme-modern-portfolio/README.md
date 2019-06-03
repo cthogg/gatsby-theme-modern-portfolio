@@ -1,7 +1,14 @@
-
 # Gatsby Modern Portfolio Theme
 
-Use this theme to write a portfolio from just one markdown file.
+One file developer portfolios.
+
+That's correct. Create your portfolio from just one markdown file. 
+
+## Features
+
+- Write a simple portfolio site from just one markdown file
+- (coming soon): Deploy to netlify to see it live!
+- (coming soon): ability to change the site's ui with themes.
 
 ## Installation
 
@@ -41,10 +48,6 @@ linkedin: "https://www.linkedin.com/in/christopher-hogg-081a41128/"
 
 1. (coming soon): Deploy to netlify to see it live!
 
-## Features
-- Write a simple portfolio site from just one markdown file
-- ability to change the styles (colors and typography)
-
 ## Out of Scope
 - Ability to blog - hopefully this can be *composed* with another theme later.
 
@@ -52,7 +55,7 @@ linkedin: "https://www.linkedin.com/in/christopher-hogg-081a41128/"
 - Easily deploy to netlify.
 - ability to add a favicon
 - allow the user to set the font and color theme (see how [mdx-blog](https://github.com/jxnblk/gatsby-theme-mdx-blog/tree/master/example) has done this)
-- integrate with netlify-cms
+- integrate with netlify-cms (this can come a bit later because the "cms" is very easy with one file!)
 
 ## With thanks to:
 -  [These](https://github.com/sw-yx/gatsby-theme-dev-blog/tree/master/src) [two](https://github.com/jxnblk/gatsby-theme-mdx-blog/tree/master/example)   great working examples of themes.
