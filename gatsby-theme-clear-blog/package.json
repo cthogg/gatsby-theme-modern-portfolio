@@ -1,6 +1,10 @@
 {
   "name": "gatsby-theme-clear-blog",
-  "version": "1.0.0",
+  "keywords": [],
+  "author": "Chris Hogg <chrishogg@protonmail.com>",
+  "version": "0.5",
+  "license": "MIT",
+  "description": "Gatbsy theme to create a simple portfolio site",
   "main": "gatsby-config.js",
   "license": "MIT",
   "peerDependencies": {
