@@ -7,8 +7,8 @@ That's correct. Create your portfolio from just one markdown file.
 ## Features
 
 - Write a simple portfolio site from just one markdown file
-- (coming soon): Deploy to netlify to see it live!
-- (coming soon): ability to change the site's ui with themes.
+- change the site's ui with simple theming.
+- (coming soon): Deploy to netlify in one click.
 
 
 ## Out of Scope
@@ -40,6 +40,10 @@ title: "John Doe"
 subtitle: "My Website"
 email: "john@doe.com"
 linkedin: "https://www.linkedin.com/in/john_doe"
+textColor: 'black'
+backgroundColor: '#e5f1f6'
+fontUrl: '"https://fonts.googleapis.com/css?family=Overlock&display=swap"'
+fontFamily: 'Overlock, cursive;'
 ---
 
 ## Experience
@@ -52,11 +56,14 @@ linkedin: "https://www.linkedin.com/in/john_doe"
 
 1. (coming soon): Deploy to netlify to see it live!
 
+### Selecting Fonts
+1. Select your chosen font from Google Fonts. 
+1. Copy and paste the font url to `index.md`
+1. Copy and paste the fontFamily to index.md. *Make sure to remove the quotation marks so that `font-family: 'Overlock', cursive;` becomes `fontFamily: 'Overlock, cursive`
 
 ## TODO:
 - Easily deploy to netlify.
 - ability to add a favicon
-- allow the user to set the font and color theme (see how [mdx-blog](https://github.com/jxnblk/gatsby-theme-mdx-blog/tree/master/example) has done this)
 - integrate with netlify-cms (this can come a bit later because the "cms" is very easy with one file!)
 
 ## With thanks to:

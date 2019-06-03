@@ -19,16 +19,18 @@ const Layout = ({ children }) => (
           frontmatter {
             textColor
             backgroundColor
+            fontUrl
+            fontFamily
           }
         }
       }
     `}
     render={data => {
-      const {textColor, backgroundColor} = data.markdownRemark.frontmatter
+      const {textColor, backgroundColor, fontUrl, fontFamily} = data.markdownRemark.frontmatter
 
       const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css?family=Overlock');
-body { font-family: 'Overlock', cursive;
+@import url(${props => props.theme.fontUrl});
+body { font-family:  ${props => props.theme.fontFamily};
   background-color: ${props => props.theme.backgroundColor};
   word-wrap: break-word;
   color: ${props => props.theme.textColor};
@@ -71,7 +73,7 @@ ul{
 `;
       return (
         <ThemeProvider
-          theme={{ backgroundColor: backgroundColor, textColor: textColor }}
+          theme={{ backgroundColor: backgroundColor, textColor: textColor, fontUrl: fontUrl, fontFamily: fontFamily }}
         >
           <>
             <GlobalStyle />
