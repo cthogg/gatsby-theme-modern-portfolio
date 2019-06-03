@@ -24,8 +24,9 @@ At its core, a Gatsby site is a combination of functionality centered around a s
 1. Use a basic theme Y
 2. Adapt a basic theme Y
 3. Build a theme Y
-4. Document it. 
-5. Use the spectrum chat. It is not too good at the moment unfortunately
+4. Document it. Y
+5. Send to Fikri
+6. Send to the Spectrum chat.
 
 ## Example Theme
 https://github.com/sw-yx/gatsby-theme-dev-blog
