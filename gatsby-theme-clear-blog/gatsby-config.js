@@ -1,13 +1,15 @@
 const path = require("path");
 
-const
-  posts = `src/pages/markdown`
-  console.log(posts)
+module.exports =  (opts = {siteTitle, siteDescription}) => {
+  const {
+    path: posts = `src/pages/markdown`,
+    siteTitle, siteDescription,
+  } = opts 
 
-module.exports = {
+  return {
   siteMetadata: {
-    title: `Chris Hogg`,
-    description: `Personal Website for Chris Hogg`,
+    title: siteTitle,
+    description: siteDescription,
     author: `@gatsbyjs`
   },
   plugins: [
@@ -59,5 +61,5 @@ module.exports = {
         ]
       }
     }
-  ]
+  ] }
 };
