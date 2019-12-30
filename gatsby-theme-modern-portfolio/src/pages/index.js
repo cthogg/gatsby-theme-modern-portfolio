@@ -61,6 +61,7 @@ export const pageQuery = graphql`
         subtitle
         email
         linkedin
+        github
       }
     }
   }
