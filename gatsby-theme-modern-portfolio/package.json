@@ -7,7 +7,7 @@
     "portfolio"
   ],
   "author": "Chris Hogg <chrishogg@protonmail.com>",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "license": "MIT",
   "description": "Gatbsy theme to create a simple portfolio site",
   "main": "gatsby-config.js",

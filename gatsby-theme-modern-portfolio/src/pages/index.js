@@ -1,17 +1,18 @@
 import React from "react";
 import SEO from "../components/seo";
-import { IoLogoLinkedin, IoMdMail } from "react-icons/io";
+import { IoLogoLinkedin, IoMdMail, IoLogoGithub } from "react-icons/io";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 
 const logoStyle = {
   width: "27px",
-  height: "27px"
+  height: "27px",
+  textDecoration: "none"
 };
 const IndexPage = ({ data }) => {
   const { markdownRemark } = data;
   const { html, frontmatter } = markdownRemark;
-  const {title,subtitle, email, linkedin} = frontmatter
+  const {title,subtitle, email, linkedin, github} = frontmatter
   return (
 
 <React.Fragment>
@@ -23,14 +24,16 @@ const IndexPage = ({ data }) => {
         <h1>{subtitle}</h1>
         <p>
           <a
-            style={{ textDecoration: "none" }}
+            style={logoStyle}
             href={`mailto:${email}`}
           >
-            <IoMdMail style={logoStyle} />{" "}
+            <IoMdMail style={logoStyle} />
           </a>{" "}
           <a href={linkedin}>
-            {" "}
-            <IoLogoLinkedin style={logoStyle} />{" "}
+            <IoLogoLinkedin style={logoStyle} />
+          </a>{" "}
+          <a href={github}>
+            <IoLogoGithub style={logoStyle} />
           </a>{" "}
         </p>
         <br />
