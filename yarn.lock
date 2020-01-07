@@ -4908,10 +4908,10 @@ gatsby-telemetry@^1.0.10:
     stack-utils "1.0.2"
     uuid "3.3.2"
 
-gatsby-theme-modern-portfolio@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-modern-portfolio/-/gatsby-theme-modern-portfolio-1.0.0.tgz#a3487825f7d246f2e2285c4e7d02084e95d87248"
-  integrity sha512-1lYwAmTuPhBj+ehGMM+fyF6eDiZafStVrN0YFRHzcTT0xAw6+qm+zy+moO+ZvbFopOWtsAeptmurxH0P4Cj9Ow==
+gatsby-theme-modern-portfolio@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-modern-portfolio/-/gatsby-theme-modern-portfolio-1.1.0.tgz#44dd729d8cb9fa5ba95d61158ed6b1ba417ff7ad"
+  integrity sha512-e7h8Rb6LpQ4rGB3D3gHSUO1aXAXlOn/feQ5nEFyuotI3qGg8o5w0RgcjrRS9szg4jyjLkb1dRJ1NkUQw+LFa7Q==
   dependencies:
     add "^2.0.6"
     gatsby "^2.4.3"
@@ -4930,6 +4930,7 @@ gatsby-theme-modern-portfolio@1.0.0:
     react-dom "^16.8.6"
     react-helmet "^5.2.1"
     react-icons "^3.7.0"
+    styled-components "^4.2.1"
     yarn "^1.16.0"
 
 gatsby-transformer-remark@^2.3.12:
