@@ -4908,10 +4908,10 @@ gatsby-telemetry@^1.0.10:
     stack-utils "1.0.2"
     uuid "3.3.2"
 
-gatsby-theme-modern-portfolio@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-modern-portfolio/-/gatsby-theme-modern-portfolio-1.0.0.tgz#a3487825f7d246f2e2285c4e7d02084e95d87248"
-  integrity sha512-1lYwAmTuPhBj+ehGMM+fyF6eDiZafStVrN0YFRHzcTT0xAw6+qm+zy+moO+ZvbFopOWtsAeptmurxH0P4Cj9Ow==
+gatsby-theme-modern-portfolio@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-modern-portfolio/-/gatsby-theme-modern-portfolio-1.1.0.tgz#44dd729d8cb9fa5ba95d61158ed6b1ba417ff7ad"
+  integrity sha512-e7h8Rb6LpQ4rGB3D3gHSUO1aXAXlOn/feQ5nEFyuotI3qGg8o5w0RgcjrRS9szg4jyjLkb1dRJ1NkUQw+LFa7Q==
   dependencies:
     add "^2.0.6"
     gatsby "^2.4.3"
@@ -4930,6 +4930,7 @@ gatsby-theme-modern-portfolio@1.0.0:
     react-dom "^16.8.6"
     react-helmet "^5.2.1"
     react-icons "^3.7.0"
+    styled-components "^4.2.1"
     yarn "^1.16.0"
 
 gatsby-transformer-remark@^2.3.12:
@@ -6782,9 +6783,9 @@ js-tokens@^3.0.2:
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
 js-yaml@^3.10.0, js-yaml@^3.11.0, js-yaml@^3.13.0, js-yaml@^3.13.1, js-yaml@^3.5.2, js-yaml@^3.9.0:
-  version "3.13.1"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
-  integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
+  version "3.14.2"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.2.tgz#77485ce1dd7f33c061fd1b16ecea23b55fcb04b0"
+  integrity sha512-PMSmkqxr106Xa156c2M265Z+FTrPl+oxd/rgOQy2tijQeK5TxQ43psO1ZCwhVOSdnn+RzkzlRz/eY4BgJBYVpg==
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
